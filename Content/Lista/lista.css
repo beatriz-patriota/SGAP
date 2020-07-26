@@ -1,0 +1,17 @@
+﻿body {
+}
+#corpoTabela{
+    border: 3px solid #808080;
+    margin: auto;
+    padding: 10px;
+    text-align: center
+}
+th, td {
+    border: 3px solid #808080;    
+    margin: auto;    
+    text-align: center;
+    padding: 10px;
+}
+th {
+    background-color: darkgray;
+}

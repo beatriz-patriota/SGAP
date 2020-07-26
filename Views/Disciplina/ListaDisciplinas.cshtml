@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "ListaDisciplinas";
+}
+
+    <h2>Listagem e Cadastro de Disciplinas </h2>
+<script src="~/Scripts/Disciplina/lstDisciplina.js"></script>
+<link rel="stylesheet" href="~/Content/Lista/lista.css"/>
+<link rel="stylesheet" href="~/Content/Formulário/Formulario.css" />
+<br />
+<a href="/Disciplina/CadastroDisciplina/" type="button" class="btn btn-primary" >Inserir Nova Disciplina</a>
+<br/> <hr/>
+<div id="alertaVerde" class="alert alert-success" style="display:none" role="alert"></div>
+<div id="lstDisciplinas"></div>
+<table >
+    <thead>
+        <tr>
+            <th> Disciplina</th>
+            <th> Período</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="corpoTabela"></tbody>
+</table>

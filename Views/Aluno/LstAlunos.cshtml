@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "LstAlunos";
+}
+
+<script src="~/Scripts/Aluno/Aluno.js"></script>
+<link rel="stylesheet" href="~/Content/Lista/lista.css" />
+<link rel="stylesheet" href="~/Content/Formulário/Formulario.css" />
+<h2>Listagem e Cadastro de Alunos</h2>
+<br />
+<a href="/Pessoa/Cadastro/" type="button" class="btn btn-primary">Inserir Novo Aluno</a>
+<br /><hr />
+<div id="alertaVerde" class="alert alert-success" style="display:none" role="alert" ></div>
+<div id="lstAlunos"></div>
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>E-mail</th>
+            <th>Data de Nascimento</th>
+            <th>CPF</th>
+            <th>Endereço</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody id="corpoTabela"></tbody>
+</table>
+<hr />
+
+

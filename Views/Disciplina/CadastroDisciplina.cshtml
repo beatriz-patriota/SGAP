@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "CadastroDisciplina";
+}
+
+<script src="~/Scripts/Disciplina/Disciplina.js"></script>
+<h2>Cadastro de Disciplinas</h2>
+<div id="alertaVermelho" class="alert alert-danger" style="display: none; transition: width 2s, height 2s, transform 2s;" role="alert"></div>
+<div id="alertaAzul" class="alert alert-success" style="display:none" role="alert"></div>
+<form id="FormDisciplina">
+    <fieldset id="Disciplina">
+        <legend> Cadastre as Disciplinas Existentes </legend>
+        <p>
+            <label for="txtNome"> Nome: </label>
+            <input type="text" id="txtNome" maxlength="50" />
+        </p>
+        <p>
+            <label for="txtPeriodo"> Período: </label>
+            <input type="text" id="txtPeriodo" maxlength="2" />
+        </p>
+    </fieldset>
+    <hr />
+    <button id="btnSalvar" onclick="Salvar()" type="button" class="btn btn-primary">Enviar</button>
+    <button id="btnEditar" onclick="Editar()" type="button" class="btn btn-primary" style="display:none">Editar</button>
+    <a href="/Disciplina/ListaDisciplinas/" type="button" class="btn btn-primary">Voltar</a>
+</form>
+
